@@ -37,20 +37,12 @@ def save_exploration_map(agent_paths, output_path="screenshots/agent_exploration
             if not agent_points:
                 continue
             x_values, y_values = zip(*agent_points)
-            axis.plot(
-                x_values,
-                y_values,
-                marker=".",
-                markersize=3,
-                linewidth=1,
-                color=colors(agent_index % 10),
-                label=f"Agent {agent_index + 1}",
-            )
             axis.scatter(
                 x_values[-1],
                 y_values[-1],
                 color=colors(agent_index % 10),
                 s=35,
+                label=f"Agent {agent_index + 1}",
             )
 
         axis.set_title(f"Map {map_id}")

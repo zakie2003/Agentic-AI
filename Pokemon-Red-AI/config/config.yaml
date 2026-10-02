@@ -18,9 +18,9 @@ rewards:
 training:
   window: "SDL2"
   resume: false
-  num_envs: 4
-  visible_agents: 1
-  training_hours: 0.167
+  num_envs: 10
+  visible_agents: 0
+  training_hours: 1
   total_timesteps: 10000000
   frame_skip: 4
   frame_history: 4
