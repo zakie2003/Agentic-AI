@@ -1,0 +1,38 @@
+emulator:
+  rom_path: "roms/Pokemon - Red Version (USA, Europe) (SGB Enhanced).gb"
+
+rewards:
+  idle: 0.0
+  blocked: 0.0
+  reverse: 0.0
+  revisit: 0.0
+  move: 0.0
+  new_position: 0.0
+  new_map: 0.0
+  new_screen: 1.0
+  battle: 2.0
+  new_pokemon: 5.0
+  stuck: -2.0
+  distance: 0.0
+
+training:
+  window: "SDL2"
+  resume: false
+  num_envs: 4
+  visible_agents: 1
+  training_hours: 0.167
+  total_timesteps: 10000000
+  frame_skip: 4
+  frame_history: 4
+  screen_match_threshold: 0.08
+  stuck_steps: 100
+  recovery_steps: 8
+  observation_width: 80
+  observation_height: 72
+  video_enabled: true
+  video_path: "screenshots/agent_0_training.gif"
+  video_fps: 10
+  video_frame_interval: 1
+  live_visualization: true
+  live_visualization_port: 8765
+
